@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Tilt+Neon&display=swap');
+
+
+
+:root {
+    --clr-background: #D5E1EF;
+    --clr-container: #F5F5F5;
+    --clr-texto: #878A91;
+    --clr-titulo: #22304D;
+    --ft-default: 'Josefin Sans', sans-serif;
+}
+
+
+
+
+body {
+    background-color: var(--clr-background);
+    font-family: var(--ft-default);
+}
+
+.container {
+    background-color: var(--clr-container);
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 10% 10%;
+    padding: 1em;
+    
+    
+}
+
+.container > * {
+    padding: 1em 0;
+}
+
+.container__textos {
+    text-align: center;
+    margin: 1em;
+    padding: 0 2em;
+
+}
+
+.container__titulo {
+    color: var(--clr-titulo);
+    font-size: 2em;
+}
+
+.container__texto {
+    margin-top: 1em;
+    color: var(--clr-text);
+}
+
+.container__qrcode {
+    border-radius: 2em;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+        margin: 3% auto;
+    }
+
+    .container__qrcode {
+        width: 100%
+    }
+}
