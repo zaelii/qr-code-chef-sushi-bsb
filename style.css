@@ -3,10 +3,10 @@
 
 
 :root {
-    --clr-background: #D5E1EF;
-    --clr-container: #F5F5F5;
-    --clr-texto: #878A91;
-    --clr-titulo: #22304D;
+    --clr-background: #690000;
+    --clr-container: #1a1a1a;
+    --clr-texto: #ffee00;
+    --clr-titulo: #f1f1f1;
     --ft-default: 'Josefin Sans', sans-serif;
 }
 
@@ -47,7 +47,8 @@ body {
 
 .container__texto {
     margin-top: 1em;
-    color: var(--clr-text);
+    color: var(--clr-texto);
+    font-size: 2em;
 }
 
 .container__qrcode {
